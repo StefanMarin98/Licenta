@@ -1,0 +1,14 @@
+{
+    "cors": {
+        "whitelist": ["http://localhost:3001", "http://localhost:3000", "http://3.83.127.185:8080"]
+    },
+
+    "secret": "XQtUVv5uerem3+!b%sKYwouWpXQtUVv5uer",
+    "port": 8081,
+    "database": {
+        "host": "localhost",
+        "name": "fr_user",
+        "user": "fr_user",
+        "password": "fr_pass"
+    }
+}
