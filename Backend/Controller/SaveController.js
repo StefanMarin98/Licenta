@@ -1,5 +1,31 @@
 var db = require('../models/index');
 
+module.exports.getOne = (req, res) => {
+db.Saves.findByPk(req.params.id)
+  .then(result => {
+    if (result) {
+      console.log(
+        "[" + "GET".green + "] Save fetched from database successfully."
+      );
+      res.status(200).send({
+        status: "success",
+        result: result
+      });
+    } else {
+      console.log("[" + "GET".green + "] Save not found in database.");
+      res.status(404).send({
+        status: "not found"
+      });
+    }
+  })
+  .catch(() => {
+    console.log("[" + "GET".green + "] Save fetch created server error.");
+    res.status(500).send({
+      status: "error"
+    });
+  });
+}
+
 module.exports.add = (req, res) => {
   db.Saves.create(req.body)
     .then(

@@ -76,7 +76,7 @@ module.exports.getTestsQuestions = async (req, res, next) => {
     } else {
       console.log("[" + "GET".green + "] Test does not exist.");
       res.status(400).send({
-        status: "bad request: user not found"
+        status: "bad request: test not found"
       });
     }
   } catch (error) {
