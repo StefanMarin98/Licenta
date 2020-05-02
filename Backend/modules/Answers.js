@@ -16,7 +16,7 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false
     },
     is_right:{
-        type: DataTypes.Boolean,
+        type: DataTypes.BOOLEAN,
         allowNull: false
     }
   });

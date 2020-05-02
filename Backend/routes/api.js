@@ -2,12 +2,12 @@ const express = require('express')
 const router = express.Router()
 
 // Controllers
-const usersController = require('../Controllers/UserController.js')
-const savesController = require('../Controllers/SaveController.js')
-const testController = require('../Controllers/TestController.js')
-const questionController = require('../Controllers/QuestionController.js')
-const answersController = require('../Controllers/AnswerController.js')
-const coursesController = require('../Controllers/CourseController.js')
+const usersController = require('../Controller/UserController.js')
+const savesController = require('../Controller/SaveController.js')
+const testController = require('../Controller/TestController.js')
+const questionController = require('../Controller/QuestionController.js')
+const answersController = require('../Controller/AnswerController.js')
+const coursesController = require('../Controller/CourseController.js')
 
 router.use((req, res, next) => {
     if (req.originalUrl === "/login" || req.originalUrl === "/register") {

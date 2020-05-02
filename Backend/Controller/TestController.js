@@ -1,4 +1,4 @@
-var db = require("../models/index");
+var db = require("../modules/index");
 
 module.exports.getAll = (req, res) => {
   db.Tests.findAll()
