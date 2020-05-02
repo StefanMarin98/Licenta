@@ -1,6 +1,6 @@
 {
-    "database": "fr_database",
-    "username": "fr_user",
-    "password": "fr_pass",
+    "database": "database_name",
+    "username": "MarinStefan98",
+    "password": "Bulimanu1",
     "hostname": "localhost"
 }

@@ -1,5 +1,5 @@
 var db = require("../modules/index");
-const bcrypt = require("bcryptjs");
+const bcrypt = require("bcrypt");
 
 module.exports.getOne = (req, res) => {
   db.Users.findByPk(req.params.id)
