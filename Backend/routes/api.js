@@ -9,16 +9,6 @@ const questionController = require('../Controller/QuestionController.js')
 const answersController = require('../Controller/AnswerController.js')
 const coursesController = require('../Controller/CourseController.js')
 
-router.use((req, res, next) => {
-    if (req.originalUrl === "/login" || req.originalUrl === "/register") {
-        next();
-    } else if (req.session.userId) {
-        next();
-    } else {
-        res.status(403).send();
-    }
-});
-
 // GET
 router.get('/users/:id', usersController.getOne)
 router.get('/users/:id/saves', usersController.getSaves)
