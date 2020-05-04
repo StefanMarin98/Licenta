@@ -4,7 +4,7 @@
     },
 
     "secret": "XQtUVv5uerem3+!b%sKYwouWpXQtUVv5uer",
-    "port": 3001,
+    "port": 8080,
     "database": {
         "host": "localhost",
         "name": "database_name",
